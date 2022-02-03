@@ -1,0 +1,20 @@
+/*
+likes(mary, wine).
+likes(bob, beer).
+likes(wini, apple).
+likes(charlie, wine).
+*/
+
+thief(john).
+thief(wini).
+thief(william).
+
+likes(wini, ball).
+likes(william, shoe).
+likes(john,shoe).
+likes(john, dollar).
+
+
+%likes(john, X) :- likes(X,wine).
+may_steal(john, X) :- thief(john), likes(john,X).
+
